@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trainer Overlay Hub</title>
+<style>
+    /* Cyberpunk Vibe Colors & Fonts */
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+    body {
+        margin: 0;
+        font-family: 'Orbitron', sans-serif;
+        background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+        color: #fff;
+        overflow-x: hidden;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 50px;
+        background: rgba(0,0,0,0.6);
+        backdrop-filter: blur(5px);
+    }
+
+    header h1 {
+        color: #00ffff;
+        font-size: 2rem;
+        letter-spacing: 2px;
+        text-shadow: 0 0 10px #00ffff;
+    }
+
+    nav a {
+        color: #ff00ff;
+        margin-left: 20px;
+        text-decoration: none;
+        font-weight: bold;
+        position: relative;
+    }
+
+    nav a::after {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 2px;
+        bottom: -3px;
+        left: 0;
+        background-color: #ff00ff;
+        transition: width 0.3s;
+    }
+
+    nav a:hover::after {
+        width: 100%;
+    }
+
+    .hero {
+        text-align: center;
+        padding: 80px 20px 40px 20px;
+    }
+
+    .hero h2 {
+        font-size: 2.5rem;
+        color: #00ffff;
+        text-shadow: 0 0 15px #00ffff;
+        margin-bottom: 10px;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+        color: #ff00ff;
+        text-shadow: 0 0 10px #ff00ff;
+    }
+
+    .games-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 50px 20px;
+        gap: 30px;
+    }
+
+    .game-card {
+        background: rgba(255,255,255,0.05);
+        border: 1px solid #00ffff;
+        border-radius: 20px;
+        padding: 20px;
+        width: 280px;
+        text-align: center;
+        transition: transform 0.3s, box-shadow 0.3s;
+        backdrop-filter: blur(5px);
+    }
+
+    .game-card:hover {
+        transform: translateY(-10px) scale(1.05);
+        box-shadow: 0 0 20px #00ffff, 0 0 40px #ff00ff;
+    }
+
+    .game-card h3 {
+        color: #00ffff;
+        margin-bottom: 10px;
+    }
+
+    .game-card p {
+        font-size: 0.9rem;
+        color: #ccc;
+        margin-bottom: 15px;
+    }
+
+    .game-card button {
+        background: #ff00ff;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 15px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background 0.3s, transform 0.2s;
+    }
+
+    .game-card button:hover {
+        background: #00ffff;
+        color: #000;
+        transform: scale(1.1);
+    }
+
+    .socials {
+        text-align: center;
+        padding: 50px 20px;
+    }
+
+    .socials a {
+        display: inline-block;
+        margin: 0 20px;
+        text-decoration: none;
+        color: #fff;
+        font-size: 1.5rem;
+        transition: transform 0.3s, color 0.3s;
+    }
+
+    .socials a:hover {
+        transform: rotate(-10deg) scale(1.3);
+        color: #00ffff;
+        text-shadow: 0 0 10px #00ffff;
+    }
+
+    .socials p {
+        font-size: 0.95rem;
+        color: #ccc;
+        margin-top: 5px;
+    }
+
+    footer {
+        text-align: center;
+        padding: 30px 20px;
+        color: #888;
+        background: rgba(0,0,0,0.6);
+    }
+
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Trainer Overlay Hub</h1>
+    <nav>
+        <a href="#games">Games</a>
+        <a href="#socials">Social</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h2>Next-Gen Game Trainers</h2>
+    <p>Download overlays for your favorite games instantly</p>
+</section>
+
+<section id="games" class="games-container">
+    <div class="game-card">
+        <h3>GTA V Enhanced</h3>
+        <p>Overlay Trainer for GTA V Enhanced edition. Enhance your gameplay with real-time overlays.</p>
+        <a href="https://os5.mycloud.com/action/share/ef8c15ae-39ad-4339-8785-39f308f57008" target="_blank"><button>Download Overlay</button></a>
+    </div>
+    <div class="game-card">
+        <h3>Cyberpunk 2077</h3>
+        <p>Overlay Trainer for Cyberpunk 2077. Keep track of stats and game info with ease.</p>
+        <a href="https://example.com/download/cyberpunk_overlay.zip" target="_blank"><button>Download Overlay</button></a>
+    </div>
+    <div class="game-card">
+        <h3>Assassin's Creed</h3>
+        <p>Overlay Trainer for Assassin's Creed. Enhance your strategy with live overlays.</p>
+        <a href="https://example.com/download/assassins_overlay.zip" target="_blank"><button>Download Overlay</button></a>
+    </div>
+</section>
+
+<section id="socials" class="socials">
+    <a href="https://discord.com/invite/UGqxpbrcux" target="_blank">Discord</a>
+    <p>Join our community on Discord to discuss overlays, updates, and support.</p>
+    <a href="https://www.youtube.com/@gigarazorlp1911" target="_blank">YouTube</a>
+    <p>Check out tutorials, gameplay, and guides on our YouTube channel.</p>
+</section>
+
+<footer>
+    &copy; 2025 Trainer Overlay Hub
+</footer>
+
+</body>
+</html>
